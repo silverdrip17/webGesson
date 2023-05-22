@@ -1,0 +1,379 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.title.is-1 {
+  font-size: 9rem;
+}
+
+.subtitle.is-2 {
+  font-size: 8rem;
+  font-weight: lighter;
+}
+
+.hero.is-medium .hero-body {
+  padding: 1.5rem 8rem;
+}
+
+#hero-principal {
+  position: relative;
+  transition: all .3s ease;
+  background-color: purple;
+}
+
+#Descripcion-Titulo {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 25%;
+  transition: .3s ease;
+  opacity: 0;
+  line-height: 2.5;
+}
+
+#hero-principal:hover .title.is-1 {
+  opacity: 0.2;
+  transition: all .2s ease;
+}
+
+#hero-principal:hover {
+  transform:
+    perspective(800px) rotateX(6deg) translateY(-2%);
+}
+
+#hero-principal::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  height: 400%;
+  width: 100%;
+  background:
+    linear-gradient(to bottom,
+      transparent 10%,
+      rgba(0, 0, 0, 0.1)50%, rgba(0, 0, 0)95%);
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+#hero-principal:hover::before {
+  opacity: 1;
+}
+
+#hero-principal:hover #Descripcion-Titulo {
+  opacity: 1;
+  transform: translateY(-5%);
+
+}
+
+#hero-principal:hover #LogoCuatrovientosIdioma-Hero {
+  opacity: 0.8;
+  transform: rotate(50deg);
+
+}
+
+#LogoCuatrovientosIdioma-Hero {
+  position: absolute;
+  width: 20em;
+  margin-top: 1%;
+  margin-left: calc(100vw - 20em - 2%);
+  /*Calcula el margen izquierdo en relación con el ancho total de la ventana del navegador. Se resta el ancho del elemento (20em) y un margen adicional (2%) del 100% del ancho de la ventana (100vw).*/
+  opacity: 0.2;
+  transition: all .3s ease;
+  mix-blend-mode: multiply;
+}
+
+#Descripcion-Titulo a {
+  color: #6e43ff !important;
+}
+
+p span {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.navbar-brand a img {
+  max-height: 1000px;
+}
+
+footer {
+  margin-top: 10vh;
+  background-color: purple;
+  color: white;
+}
+
+#mapsFooter {
+  margin-top: 5%;
+}
+
+.fa-book,
+.fa-graduation-cap {
+  font-size: 5vh;
+  margin-top: 2vh;
+}
+
+.imagenSobreNosotros {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: scale 2s;
+}
+
+.imagenSobreNosotros:hover {
+  scale: 1.1;
+}
+
+.imagenesProgramaIdiomas {
+  width: 94px;
+  height: 94px;
+}
+
+.sobreNosotros {
+  margin-top: 5vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+#sobreNosotrosSectionCertificados {
+  margin-left: 25%;
+  margin-bottom: -17vh;
+  margin-top: -5vh;
+}
+
+.heroSubTitulos {
+  text-align: center;
+  width: 15%;
+  margin-left: 2%;
+  margin-right: 10%;
+  border-radius: 50px;
+  background:
+    linear-gradient(to bottom,
+      transparent 10%,
+      rgba(102, 18, 100, 0.1)45%, rgba(222, 4, 238, 0.5)95%) !important;
+}
+
+.columnasConCifras {
+  margin-top: 5vh;
+  text-align: center;
+  margin-right: 4vh;
+}
+
+div h2 {
+  color: #363636 !important;
+}
+
+.imgBnaderas{
+  border-radius: 52px;
+  width: 20%;
+  height: 80%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+}
+
+#imgBrujulaGaleria {
+  position: relative;
+  width: 30%;
+  margin-left: 65%;
+  animation: spinAround 8s linear infinite;
+  filter: drop-shadow(0 0 3px rgba(222, 4, 238));
+
+}
+
+.imgGaleria:hover {
+  transition: all .5s ease;
+  transform: rotateX(0deg);
+}
+.imgGaleria {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 40%;
+  width: 10%;
+  transform: rotateX(80deg);
+  display: grid;
+}
+
+#imgCertificado{
+  border-radius: 20px;
+  width: 25%;
+  height: 85%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+#boxImgCertificado{
+  text-align: center;
+}
+.fa-chevron-right,
+.idiomasA {
+  font-size: 20px !important;
+}
+
+footer a {
+  text-decoration: underline;
+  position: relative;
+  color: white;
+  font-weight: normal;
+  border-radius: 3px;
+  transition: background-color 1s;
+}
+
+footer a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  font-weight: normal;
+  color: white;
+}
+
+footer .img img {
+  padding: 3%;
+}
+
+#footerCentral {
+  margin-left: 10%;
+  margin-top: 1%;
+}
+
+#copyright {
+  background-color: black;
+}
+
+#copyright p {
+  padding: 1vh;
+}
+
+hr {
+  background-color: rgba(0, 0, 0, 0.079);
+}
+
+footer hr {
+  background-color: white;
+  margin: 0px !important;
+}
+
+#indexSobreNosotros {
+  margin-top: 5%;
+}
+
+.iconosSobreNosotros {
+  width: 10%;
+}
+
+.centrar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+}
+
+#progress {
+  z-index: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  display: none;
+  place-items: center;
+  border-radius: 56%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% — 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  font-size: 25px;
+  color: #001a2e;
+}
+
+.sinborde {
+  border: 0px !important;
+}
+
+table img {
+  margin-bottom: 0px !important;
+}
+
+footer #columna3 h5,
+footer #columna3 p {
+  margin-top: 3%;
+}
+
+footer #columna3 p {
+  padding-right: 10%;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: purple;
+}
+
+.navbar-menu .navbar-item:hover {
+  color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.navbar-menu .button {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+  color: white;
+  border-color: black;
+  background-color: purple !important;
+}
+
+.help {
+  color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+}
+
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+}
+
+.contenido-slider{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width:900px){
+    .contenido-slider > img{
+        width: 250px;
+    }
+
+    .contenido-slider > div{
+        width: 100%;
+    }
+
+    .contenido-slider h2{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .contenido-slider{
+       flex-direction: column-reverse;
+    }
+
+    .contenido-slider > div{
+        width: 80%;
+    }
+
+}

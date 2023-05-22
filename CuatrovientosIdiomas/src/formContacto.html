@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang=es>
+
+<head>
+    <link rel="stylesheet" href="../bulma.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../img/logoBrujula.png">
+    <meta charset="utf-8">
+    <title>CUATROVIENTOS IDIOMAS</title>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/9ad3ec13bd.js" crossorigin="anonymous"></script>
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../img/logo.png" alt="Logo de Cuatrovientos" class="is-size-1 is-fullwidth">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="../index.html">
+                            Inicio
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Cursos
+                            </a>
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item" href="../src/cursoIngles.html">
+                                    Ingles
+                                </a>
+                                <a class="navbar-item" href="../src/cursoFrances.html">
+                                    Frances
+                                </a>
+                            </div>
+                        </div>
+                        <a class="navbar-item" href="../src/Precios.html">
+                            Precios
+                        </a>
+                        <a class="navbar-item" href="../src/sobreNosotros.html">
+                            Sobre Nosotros
+                        </a>
+                        <a class="navbar-item" href="../src/formContacto.html">
+                            Contacto
+                        </a>
+                        <a class="button" href="./formInscripcion.html">
+                            Matriculate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="../js/contenidoWeb.js"></script>
+    <div id="progress">
+        <span id="progress-value">
+            <i class="fa-solid fa-chevron-up"></i>
+        </span>
+    </div>
+    <div class="hero is-medium is-link" id="hero-principal">
+        <p class="title strong is-1">
+            CUATROVIENTOS</p>
+        <p class="subtitle is-2">
+            IDIOMAS
+        </p>
+        <p id="Descripcion-Titulo">
+            <span>CONTACTO</span><br>
+            No dudes en preguntar
+        </p>
+        <img src="../img/logoBrujula.png" alt="Logo Cuatrovientos" id="LogoCuatrovientosIdioma-Hero">
+    </div>
+
+    <div class="box sobreNosotros">
+        <h4 class="title is-4 has-text-weight-bold has-text-centered">¿Tienes alguna pregunta?</h4>
+        <h5 class="title is-5 has-text-centered has-text-weight-normal">Si tienes alguna duda y no encuentras en esta
+            página la información que necesitas, por favor ponte en contacto con nosotros a través del siguiente
+            formulario de contacto:</h5>
+        <div class="field">
+            <form action="https://www.w3schools.com/action_page.php" method="POST" id="formulario">
+                <div class="field">
+                    <label class="label">Nombre*</label>
+                    <div class="control has-icons-left">
+                        <input name="nombre textoInput" class="input" type="text" required minlength="3">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email*</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input name="email" id="textoEmail" class="input" type="email"
+                            placeholder="cuatrovientos@gmail.com" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </span>
+                    </div>
+                    <p id="ayudaEmail" class="help"></p>
+                </div>
+
+                <div class="field">
+                    <label class="label">Message*</label>
+                    <div class="control">
+                        <textarea name="mensaje" class="textarea" placeholder="Textarea" required></textarea>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button type="submit" class="button is-link">Submit</button>
+                    </div>
+                    <div class="control">
+                        <button type="reset" class="button is-link is-light">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/validacionFormulario.js"></script>
+    <footer>
+        <div class="columns">
+            <div class="column has-text-centered">
+                <div class="img">
+                    <img src="../img/logo-cuatrovientos-footer.png" alt="Logo de Cuatrovientos Idiomas">
+                </div>
+                <iframe id="mapsFooter"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.2994266113856!2d-1.6620960845289399!3d42.82428847915843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50929245c3a2c1%3A0xbcafdfb668104a91!2sCuatrovientos%20Idiomas!5e0!3m2!1ses!2ses!4v1683799220893!5m2!1ses!2ses"></iframe>
+            </div>
+            <div class="column has-text-left" id="footerCentral">
+                <h5 class="title is-5 has-text-weight-bold has-text-white">Informacion</h5>
+                <p class="is-underlined has-text-weight-bold">Contacto</p>
+                <p class="has-text-weight-bold">&nbsp;&nbsp;Telefono: <a href="tel:+34948124129">(+34)948 12 41 29</a>
+                </p>
+                <p class="has-text-weight-bold">&nbsp;&nbsp;Correo: <a
+                        href="mailto:info@cuatrovientos.org">info@cuatrovientos.org</a></p>
+                <p class="is-underlined has-text-weight-bold">Horarios</p>
+                <p>&nbsp;&nbsp;Lunes a Viernes: 9:00 - 14:00 h.</p>
+                <p>&nbsp;&nbsp;Martes: 16:30 – 18:30 h.</p>
+            </div>
+            <div class="column" id="columna3">
+                <h5 class="title is-5 has-text-weight-bold has-text-white">Objetivos</h5>
+                <p>El centro de Cuatrovientos Idiomas es un centro de carácter público cuya misión es ofrecer a amplios
+                    sectores de la población una preparación semipresencial y a distancia, y la correspondiente
+                    certificación en los diversos niveles de los idiomas que imparte.</p>
+            </div>
+        </div>
+        <hr class="is-divider">
+        <div class="content has-text-centered" id="copyright">
+            <p>
+                © Copyright - Cuatrovientos Centro Integrado
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
